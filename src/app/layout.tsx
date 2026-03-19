@@ -14,10 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-
-        {/* MUSIC COMPONENT */}
         <MusicPlayer />
-
         {children}
       </body>
     </html>
