@@ -1,0 +1,64 @@
+.container {
+  height: 100vh;
+  background: linear-gradient(135deg, #1a0033, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* 💌 LETTER CARD */
+.letter {
+  width: 420px;
+  max-width: 90%;
+  padding: 50px 35px;
+
+  background: #fff;
+  border-radius: 25px;
+
+  box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+
+  text-align: center;
+
+  animation: fadeIn 1.2s ease forwards;
+}
+
+/* TITLE */
+.title {
+  color: #ff4d6d;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* TEXT */
+.text {
+  color: #444;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* HEART */
+.heart {
+  margin-top: 25px;
+  font-size: 28px;
+  animation: pulse 1.5s infinite;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
