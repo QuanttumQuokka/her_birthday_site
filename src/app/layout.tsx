@@ -1,5 +1,4 @@
 import "./globals.css";
-import MusicPlayer from "./MusicPlayer";
 
 export const metadata = {
   title: "For You ❤️",
@@ -14,7 +13,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <MusicPlayer />
         {children}
       </body>
     </html>
