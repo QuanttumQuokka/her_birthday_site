@@ -1,0 +1,118 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e6b8b7;
+  position: relative;
+  overflow: hidden;
+}
+
+/* GRID BACKGROUND */
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: 0;
+}
+
+/* TOP + BOTTOM WAVES */
+.container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at 40px 40px, #fff 40px, transparent 41px) top left,
+    radial-gradient(circle at 40px calc(100% - 40px), #fff 40px, transparent 41px) bottom left;
+
+  background-size: 80px 80px;
+  background-repeat: repeat-x;
+  z-index: 1;
+}
+
+/* HEARTS */
+.heart1 {
+  position: absolute;
+  left: 12%;
+  top: 45%;
+  font-size: 18px;
+  opacity: 0.6;
+  z-index: 2;
+}
+
+.heart2 {
+  position: absolute;
+  right: 15%;
+  top: 55%;
+  font-size: 18px;
+  opacity: 0.6;
+  z-index: 2;
+}
+
+/* CARD */
+.card {
+  width: 360px;
+  padding: 40px 25px;
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  transform: rotate(-2deg);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 5;
+}
+
+/* TAPE */
+.tape {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  width: 70px;
+  height: 35px;
+  background: rgba(255,105,135,0.6);
+  transform: rotate(25deg);
+}
+
+/* GIFT */
+.gift {
+  width: 90px;
+  margin-bottom: 15px;
+}
+
+/* TITLE */
+.title {
+  font-size: 34px;
+  color: #ff4d6d;
+  font-weight: 700;
+  font-family: 'Comic Sans MS', cursive;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.text {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* BUTTON */
+.button {
+  border: 2px solid #ff4d6d;
+  background: transparent;
+  padding: 10px 25px;
+  border-radius: 6px;
+  color: #ff4d6d;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #ff4d6d;
+  color: white;
+} 
