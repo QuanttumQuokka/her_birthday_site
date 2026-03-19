@@ -24,7 +24,6 @@ export default function Page1() {
         <div className={styles.tape}></div>
 
         <img src="/gift.png" alt="gift" className={styles.gift} />
-        <img src="/heart.png" alt="heart" className={styles.gift} />
         
         <h1 className={styles.title}>Hey Cutiepie</h1>
 
